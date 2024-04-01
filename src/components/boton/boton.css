@@ -1,0 +1,13 @@
+
+.irMenu{
+    background:orange;
+    padding:15px 40px;
+    border-radius:10px;
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:700;
+    display: block;
+    width:fit-content;
+    margin-top:15px;
+}

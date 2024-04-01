@@ -1,0 +1,283 @@
+
+.menu{
+    background:#2F695C;
+    position:sticky;
+    top:0;
+    z-index:20;
+}
+.menu-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px 10px;
+    color:white;
+    max-width:1400px;
+    margin:auto;
+}
+.perfil-sesion svg{
+    color:white;
+    cursor:pointer;
+}
+.links-navegacion a{
+    color:white;
+    padding:3px 0px;
+    margin:5px 15px;
+    text-decoration: none;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.5s;
+    border-bottom:3px solid transparent;
+}
+.links-navegacion a:hover{
+    border-bottom:3px solid white;
+}
+.link-logo a{
+    color:white;
+    font-weight:bold;
+    font-size:30px;
+    text-decoration:none;
+}
+.hamburger{
+    display:none;
+    & svg{
+        font-size:40px;
+    }
+}
+
+.menu-movil{
+    position:fixed;
+    top:63px;
+    left:100vh;
+    transition:0.5s;
+    height:100%;
+    width:100%;
+    background:white;
+    color:black;
+    & a:nth-child(1){background:#2f695c;}
+    & a:nth-child(2){background:#769e94;}
+    & a:nth-child(3){background:#9cbbaf;}
+    & a:nth-child(4){background:#ecf1ee;color:#2F695C}
+}
+.menu-movil > a{
+    display:flex;
+    justify-content: space-between;
+    padding:15px;
+    text-decoration:none;
+    font-size:21px;
+    font-weight:900;
+    color:#f8f8f8;
+}
+.menu-movil a svg{
+    font-size:30px;
+}
+.person,
+.carro{
+    font-size:22px;
+    margin-left:50px
+}
+
+.menu-movil div {
+    position:absolute;
+    bottom:0;
+    height:220px;
+    & a{
+        display:block;
+        background:red;
+        padding:15px 25px;
+        color:white;
+        text-decoration:none;
+        margin:8px 10px;
+        border-radius: 40px;
+        font-weight:900;
+    }
+    
+}
+
+/* VENTANA MODAL */
+/* .modal{
+    height:100%;
+    width:800px;
+    background:white;
+    border:0;
+    outline:0;
+} */
+.modal{
+    position:fixed;
+    right:0;
+    top:0;
+    width:100%;
+    box-sizing: border-box;
+    height:100%;
+    background:rgba(0, 0, 0, 0.395);
+    display:none;
+    color:black;
+}
+.content-modal{
+    background:#f7f7f7;
+    position:absolute;
+    width:390px;
+    top:0;
+    right:0px;
+    transition:1s;
+    height:100%;
+    padding:20px 0px;
+}
+.modal::backdrop{
+    background:rgba(255, 0, 0, 0.429);
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 20px;
+    & h3{
+        font-weight:900;
+    }
+    & p svg{
+        font-size:25px;
+        cursor: pointer;
+        color:black;
+    }
+}
+.pedido{
+    overflow:scroll;
+    height:62%;
+    scrollbar-width: none;
+    padding:0px 20px;
+}
+.producto-carrito{
+    display:flex;
+    align-items: center;
+    background:white;
+    border-radius:10px;
+    overflow: hidden;
+    margin:10px 0px;
+    & img{
+        width:110px;
+        }
+}
+.carro-vacio{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.info-producto{
+    width:100%;
+    padding:10px;
+}
+.info-producto .precio{
+    font-size:19px;
+    font-weight:900;
+}
+.info-producto div{
+    display:flex;
+    justify-content: space-between;
+    & h4{
+        width:60%;
+        margin-bottom:15px;
+        font-size:15px;
+    }
+    & svg {color:rgb(86, 86, 86);}
+    & section{
+        display:flex;
+        align-items: center;
+        gap:20px;
+        border:1px solid black;
+        border-radius:3px;
+        padding:2px;
+        & button{
+            border:0;
+            background:white;
+            padding:0px 5px;
+            font-size:20px;
+        }
+    }
+}
+.cantidad-carro{
+    margin:15px 0px;
+    & p{
+        font-size:14px;
+        border-bottom:1px solid black;
+        cursor:pointer;
+    }
+    & h4 span{
+        border:1px solid black;
+        border-radius:20px;
+        padding:0px 8px;
+    }
+}
+
+.comprar-productos{
+    background:white;
+    margin-top:20px;
+    box-shadow: 2px -7px 10px rgb(217, 217, 217);
+    height:100%;
+    padding:15px;
+
+    & .codigo{
+        font-size:13px;
+        margin:10px 0px;
+    }
+    & div{
+        display:flex;
+        justify-content: space-between;
+        padding:10px 0px;
+    }
+    & button{
+        width:100%;
+        border:0;
+        padding:12px;
+        background:orange;
+        border-radius:40px;
+        color:white;
+        font-weight:700;
+        font-size:20px;
+    }
+    & .haz{
+        text-align:center;
+        font-size:12px;
+        margin-top:10px;
+        & span{color:rgb(5, 194, 77)}
+    }
+}
+
+.compra-hecha{
+    position:absolute;
+    top:-150px;
+    left:0;
+    width:100%;
+    background:rgb(7, 212, 116);
+    height:100px;
+    border-radius:0px 0px 20px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.7s;
+    & h2{
+        font-size:30px;
+    }
+}
+
+
+@media(max-width:920px){
+    .hamburger{
+        display:block;
+    }
+    .person{
+        display:none;
+    }
+    .links-navegacion{
+        display:none;
+    }
+    .menu-content{
+        padding:12px 10px;
+    }
+    .carro{
+        margin-left:0;
+    }
+    .content-modal{
+        width:100%;
+        box-sizing: border-box;
+    }
+}

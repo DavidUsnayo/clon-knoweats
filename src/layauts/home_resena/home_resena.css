@@ -1,0 +1,74 @@
+
+/* RESEÑAS */
+.section-coments{
+    display:flex;
+    justify-content: space-between;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    margin:50px 0px;
+}
+.resena{
+    min-width:330px;
+    margin:10px;
+    scroll-snap-align: center;
+}
+.comentario{
+    background:#f2f2f2;
+    padding:20px;
+    border-radius:10px;
+    height:130px;
+    overflow:hidden;
+    position:relative;
+    transition:0.5s;
+}
+.comentario > p{
+    color:rgb(121, 121, 121);
+    font-size:14px;
+    margin-top:10px;
+}
+.comentario h5{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:20px 15px;
+    color:rgb(123, 191, 255);
+    background: linear-gradient(#f2f2f2cc, #ebebeb);
+    cursor:pointer;
+    text-decoration:underline
+}
+.comentario h5:hover{
+    text-decoration: none;
+}
+.comentario div{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.comentario div p svg{
+    color:orange;
+    margin:0px 3px;
+}
+.perfil-usuario{
+    display:flex;
+    align-items: center;
+    margin:15px 0px;
+}
+.circle{
+    width:50px;
+    height:50px;
+    background:rgb(230, 230, 230);
+    border-radius:50%;
+    margin-right:15px;
+}
+.usuario{
+    text-align:center
+}
+.usuario h3{
+    color:rgb(0, 157, 255)
+}
+.usuario p{
+    font-size:12px;
+    color:rgb(117, 117, 117);
+}

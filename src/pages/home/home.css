@@ -1,0 +1,218 @@
+.home-container{
+    max-width: 1400px;
+    margin:auto;
+    padding:0px 15px;
+}
+
+.principal{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.principal div{
+    width:50%;
+    margin:40px 0px;
+}
+
+h1{
+    font-size:50px;
+    color:#2F695C;
+    font-weight:900;
+    line-height:48px;
+}
+.lista-principal{
+    list-style-type:none;
+}
+.lista-principal li{
+    margin:20px 0px;
+    font-size:20px;
+    font-family: 'Fraunces'
+}
+.principal-texto a{
+    padding:15px 30px;
+    border-radius:7px;
+    background:rgb(252, 166, 7);
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    display: block;
+    width:fit-content;
+    font-size:20px;
+}
+.principal div img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* estilos pasos */
+.container-pasos{
+    background:#eeeeee;
+    border-radius:40px;
+    padding:40px;
+    & a{
+        margin:auto;
+    }
+}
+.pasos{
+    display:flex;
+    justify-content: space-around;
+}
+.pasos div{
+    width:300px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;;
+}
+.container-pasos h2{
+    text-align:center;
+    font-size:40px;
+    font-weight:800;
+    padding:20px;
+}
+.pasos div p{
+    text-align:center;
+}
+
+marquee{
+    background:#2F695C;
+    padding:40px;
+    font-size:40px;
+    font-weight:bold;
+    color:white;
+}
+
+
+/* menu de platos */
+.container-menu-inicio{
+    padding:30px 0px;
+    max-width:1400px;
+    margin:auto;
+    & a{
+        margin:auto;
+    }
+}
+.container-menu-inicio >h2{
+    text-align:center;
+    font-weight:900;
+    font-size:40px;
+    margin:30px;
+}
+.caja-card{
+    display:flex;
+    justify-content: space-between;
+    overflow: scroll;
+    scrollbar-width:none;
+    scroll-snap-type:x mandatory;
+}
+
+/* VIDA FACIL */
+.vida-facil{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#f0f3ff;
+    border-radius:30px;
+    padding:50px 10px;
+    & p{
+        font-size:20px;
+        font-style: italic;
+    }
+    & h2{
+        line-height:1;
+        font-size:45px;
+        font-weight:800;
+        margin-bottom:30px;
+    }
+    & img{
+        width:80%;
+    }
+}
+
+/* SECTION DUDAS */
+.section-dudas{
+    width:900px;
+    margin:50px auto;
+}
+.duda-titulo{
+    margin:40px 0px;
+    text-align:center;
+    & p{
+        line-height:0;
+        font-size:20px;
+        color:gray;
+        font-style: italic;
+    }
+    & h2{
+        font-size:45px;
+        font-weight:900;
+    }
+}
+
+/* FRAME LOGOS */
+.frame{
+    display:flex;
+    justify-content: space-between;
+    margin:50px 0px;
+    overflow:scroll;
+    scrollbar-width:none;
+    
+    & img{
+        width:220px;
+    }
+}
+
+
+@media(max-width:920px){
+    .principal{
+        flex-direction: column-reverse;
+    }
+    .principal div{
+        width:100%;
+    }
+    .principal-texto{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        & h1{
+            text-align:center;
+            font-size:45px;
+            line-height:42px;
+        }
+    }
+    .container-menu-inicio{
+        width:100%;
+    }
+    .container-pasos h2{
+        font-size:35px;
+    }
+    .pasos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-dudas{
+        width:100%;
+    }
+    .pide-mas{
+        flex-wrap:wrap-reverse;
+    }
+    .card{
+        min-width:300px;
+    }
+    .vida-facil h2{
+        text-align:center;
+        font-size:38px;
+    }
+    .vida-facil img{
+        width:100%;
+    }
+    .section-dudas{
+        margin-top:100px;
+    }
+    .lista-principal li{
+        font-size:17px;
+    }
+    .principal .principal-texto{
+        margin-top:0px;
+    }
+}

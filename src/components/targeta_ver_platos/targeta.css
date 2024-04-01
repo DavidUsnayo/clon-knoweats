@@ -1,0 +1,26 @@
+.platos-de-semana{
+    display:flex;
+    background:#f2f2f2;
+    padding:50px 10px;
+    border-radius:20px;
+    flex-direction:column;
+    align-items: center;
+    margin:20px 0px;
+    text-align: center;
+    & h2{
+        font-size:28px;
+        font-weight:900;
+        line-height:30px;
+    }
+    & p{
+        font-size:18px;
+        color:gray;
+        margin:15px 0px;
+    }
+}
+
+@media(max-width:700px){
+    .platos-de-semana .h2{
+        font-size:25px;
+    }
+}

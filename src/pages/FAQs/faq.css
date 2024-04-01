@@ -1,0 +1,29 @@
+
+.FAQs{
+    max-width:1400px;
+    margin:auto;
+    padding:0px 10px;
+}
+.FAQs > h2{
+    text-align: center;
+    font-size:50px;
+    font-weight:900;
+    margin-top:35px;
+    line-height:50px;
+}
+.FAQs div{
+    padding:30px;
+    margin:50px 0px;
+    border: 1px solid black;
+    border-radius:20px;
+}
+.preguntas h2{
+    text-align:center;
+    font-size:45px;
+    font-weight:900;
+    margin-bottom:50px;
+}
+
+.FAQs div:nth-child(5){
+    border:0;
+}

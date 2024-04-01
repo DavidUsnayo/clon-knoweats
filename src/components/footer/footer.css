@@ -1,0 +1,36 @@
+
+.footer{
+    background:#2F695C;
+    padding:70px 10px;
+    padding-bottom:120px;
+    color:white;
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+.footer div p{
+    margin:20px 0px;
+    color:rgb(240, 240, 240);
+    font-size:17px;
+    cursor:pointer;
+}
+.footer div p:hover{
+    color:rgb(255, 255, 255);
+}
+.footer div h2{
+    font-size:40px;
+}
+.footer div svg{
+    font-size:40px;
+    margin:10px 20px 0px 0px;
+    border-radius: 15px;;
+}
+
+@media(max-width:800px){
+    .footer{
+        flex-direction:column
+    }
+    .footer div{
+        margin:15px 0px;
+    }
+}

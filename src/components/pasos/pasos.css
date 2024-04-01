@@ -1,0 +1,14 @@
+
+.caja-paso h2{
+    font-weight:bold;
+    font-size:25px;
+    font-family: 'Fraunces';
+}
+.caja-paso img{
+    width:170px;
+}
+.caja-paso p{
+    font-size:20px;
+    color:rgb(110, 110, 110);
+    font-family: Montserrat;
+}
