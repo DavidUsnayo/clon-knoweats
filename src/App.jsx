@@ -17,9 +17,9 @@ function App() {
   
   return (
       <VariablesContexto>
-        <Router>
+        <Router >
           <Navegacion/>
-          <Routes>
+          <Routes basename='/clon-knoweats' >
               <Route path='/' element={<Home/>}/>
               <Route path='/menu' element={<Menu/>}/>
               <Route path='/como_funciona' element={<ComoFunciona/>}/>
